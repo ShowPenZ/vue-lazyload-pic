@@ -1,4 +1,4 @@
-[English](https://github.com/ShowPenZ/vue-lazyload-pic/blob/master/README_en-US.md) | 中文
+English | [中文](./README.md)
 
 # vue-simple-ws
 
@@ -12,7 +12,7 @@ $ yarn add vue-lazyload-pic
 ```
 
 ## Usage
-方法1 仅针对当前所要展示的大图做完全加载后展示，未完全加载时图片用占位图替代
+Method 1: Display after full loading only for the large picture to be displayed currently, and replace the picture with occupation bitmap when it is not fully loaded
 
 ``` vue
 <script type="text/jsx">
@@ -31,21 +31,22 @@ export default {
     const that = this;
     const { imgLoaded } = that;
 
-    // 图片载入完成的回掉
+    // loaded callback
     const onLoads = arg => {
       that.imgLoaded = arg;
-      // 可在这个函数内执行图片加载完成后的操作
+      //it means that image was loaded
+      // do you want to do 
     };
 
     return (
       <div class="container">
         <LazyLoad.PicLazyLoad
-          img={Sevn} // 图片
-          skeleton="newSkeleton" // 占位图css样式(className)
-          imgClassName="sevn" // 图片的样式(className)
+          img={Sevn} // images
+          skeleton="newSkeleton" // Bitmap CSS Style(className)
+          imgClassName="sevn" // img className 
           alt="sevn"
           imgLoaded={imgLoaded}
-          {...{ on: { onloads: onLoads } }} //监听图片加载
+          {...{ on: { onloads: onLoads } }} //Monitor image loading
         />
       </div>
     );
@@ -70,7 +71,7 @@ export default {
 </style>
 
 ```
-方法2 懒加载图片列表，当图片加载才会被显示在列表内
+Method 2: Lazy loading of picture list, when the picture is loaded, it will be displayed in the list
 
 ``` vue
 <script type="text/babel">
