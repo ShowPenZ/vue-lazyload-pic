@@ -1,6 +1,6 @@
 English | [中文](./README.md)
 
-# vue-simple-ws
+# vue-lazyload-pic
 
 > A lazyload-pic component for Vue
 

@@ -1,6 +1,6 @@
 [English](https://github.com/ShowPenZ/vue-lazyload-pic/blob/master/README_en-US.md) | 中文
 
-# vue-simple-ws
+# vue-lazyload-pic
 
 > A lazyload-pic component for Vue
 
