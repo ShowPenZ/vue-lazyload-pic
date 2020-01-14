@@ -1,6 +1,6 @@
 {
   "name": "vue-lazyload-pic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "ShowPenZ <pengxiaoz1012@gmail.com> (https://ShowPenZ.github.io/)",
   "main": "dist/Lazyload.min.js",
   "description": "a lazyload-pic component for Vue",
